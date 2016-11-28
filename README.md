@@ -24,14 +24,11 @@ Files
 Contains the __RandomLayer__, __MLPRandomLayer__, __RBFRandomLayer__ and __GRBFRandomLayer__ classes.
 包含RandomLayer，MLPRandomLayer，RBFRandomLayer和GRBFRandomLayer类。
 
-RandomLayer is a transformer that creates a feature mapping of the     
-inputs that corresponds to a layer of hidden units with randomly 
-generated components.
+RandomLayer is a transformer that creates a feature mapping of the inputs that corresponds to a layer of hidden units with randomly  generated components.
 RandomLayer是一个变换器，它使用随机生成的组件创建对应于一层隐藏单元的输入的要素映射。
 
-The transformed values are a specified function of input activations
-that are a weighted combination of dot product (multilayer perceptron)
-and distance (rbf) activations:
+The transformed values are a specified function of input activations that are a weighted combination of dot product (multilayer perceptron) and distance (rbf) activations:
+
 变换值是输入激活的指定函数，其是点积（多层感知器）和距离（rbf）激活的加权组合：
 
 	  input_activation = alpha * mlp_activation + (1-alpha) * rbf_activation
@@ -40,16 +37,19 @@ and distance (rbf) activations:
 	  rbf_activation(x) = rbf_width * ||x - center||/radius
 
 _mlp_activation_ is multi-layer perceptron input activation  
+mlp_activation是多层感知器输入激活
 
 _rbf_activation_ is radial basis function input activation
+rbf_activation是径向基函数输入激活
 
 _alpha_ and _rbf_width_ are specified by the user
+alpha和rbf_width由用户指定
 
-_weights_ and _biases_ are taken from normal distribution of
-mean 0 and sd of 1
+_weights_ and _biases_ are taken from normal distribution of mean 0 and sd of 1
+权重和偏差取自平均值0和sd为1的正态分布
 
-_centers_ are taken uniformly from the bounding hyperrectangle
-of the inputs, and
+_centers_ are taken uniformly from the bounding hyperrectangle of the inputs, and
+中心从输入的有限超矩形均匀地取出，
 
 	radius = max(||x-c||)/sqrt(n_centers*2)
 
