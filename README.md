@@ -6,8 +6,7 @@ Python-ELM v0.3
 ######From the abstract:
 
 > It is clear that the learning speed of feedforward neural networks is in general far slower than required and it has been a major bottleneck in their applications for past decades. Two key reasons behind may be: 1) the slow gradient- based learning algorithms are extensively used to train neural networks, and 2) all the parameters of the networks are tuned iteratively by using such learning algorithms. Unlike these traditional implementations, this paper proposes a new learning algorithm called extreme learning machine (ELM) for single- hidden layer feedforward neural networks (SLFNs) which ran- domly chooses the input weights and analytically determines the output weights of SLFNs. In theory, this algorithm tends to provide the best generalization performance at extremely fast learning speed. The experimental results based on real- world benchmarking function approximation and classification problems including large complex applications show that the new algorithm can produce best generalization performance in some cases and can learn much faster than traditional popular learning algorithms for feedforward neural networks.
-
-##很明显，前馈神经网络的学习速度通常远远慢于所需要的速度，并且它已经是它们在过去几十年的应用中的主要瓶颈。背后的两个关键原因可能是：1）基于慢速梯​​度的学习算法广泛地用于训练神经网络，以及2）通过使用这种学习算法迭代地调谐网络的所有参数。与这些传统的实现不同，本文提出了一种新的学习算法，称为极限学习机（ELM）用于单隐层前馈神经网络（SLFN），其随机选择输入权重并分析确定SLFN的输出权重。理论上，该算法倾向于在极快的学习速度下提供最佳的泛化性能。基于真实世界基准函数近似和包括大型复杂应用的分类问题的实验结果表明，新算法在某些情况下可以产生最佳的泛化性能，并且比前馈神经网络的传统流行学习算法学习得快得多。##
+很明显，前馈神经网络的学习速度通常远远慢于所需要的速度，并且它已经是它们在过去几十年的应用中的主要瓶颈。背后的两个关键原因可能是：1）基于慢速梯​​度的学习算法广泛地用于训练神经网络，以及2）通过使用这种学习算法迭代地调谐网络的所有参数。与这些传统的实现不同，本文提出了一种新的学习算法，称为极限学习机（ELM）用于单隐层前馈神经网络（SLFN），其随机选择输入权重并分析确定SLFN的输出权重。理论上，该算法倾向于在极快的学习速度下提供最佳的泛化性能。基于真实世界基准函数近似和包括大型复杂应用的分类问题的实验结果表明，新算法在某些情况下可以产生最佳的泛化性能，并且比前馈神经网络的传统流行学习算法学习得快得多。
 
 It's a work in progress, so things can/might/will change.
 
