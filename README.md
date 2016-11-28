@@ -88,6 +88,7 @@ Contains the __ELMRegressor__, __ELMClassifier__, __GenELMRegressor__, and __Gen
 
 GenELMRegressor and GenELMClassifier both take *RandomLayer instances as part of their contructors, and an optional regressor (conforming to the sklearn API)for performing the fit (instead of the default linear fit using the pseudo inverse from scipy.pinv2).
 >GenELMRegressor和GenELMClassifier都将* RandomLayer实例作为其构造器的一部分，以及用于执行拟合的可选回归（符合sklearn API）（而不是使用来自scipy.pinv2的伪逆的默认线性拟合）。
+
 GenELMClassifier is little more than a wrapper around GenELMRegressor that binarizes the target array before performing a regression, then unbinarizes the prediction of the regressor to make its own predictions.
 >GenELMClassifier比在执行回归之前对目标数组进行二进制化的GenELMRegressor包装器稍微多一些，然后对回归器的预测进行二值化以进行自己的预测。
 
